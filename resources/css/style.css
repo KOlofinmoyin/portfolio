@@ -22,6 +22,21 @@
   margin: 0 auto;
 }
 
+.about-content, h2{
+    color: black;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+p.skill {
+    color: black;
+    font-size: 18px;
+    padding-right: 150px;
+    padding-top: 15px;
+}
+
 h1 {
   position: relative;
     font-size: 80px!important;
@@ -157,14 +172,23 @@ li {
     right: 70px;
 }
 
-/* .container {
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-around; */
-/* } */
-
 #description {
     /* position: relative; */
     top: 200px;
     left: 400px;
+}
+
+.about {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  color: black;
+}
+
+.progress {
+  border-radius: 16px;
+  margin-bottom: 20px;
+}
+
+.progress-bar {
+  border-radius: 16px;
 }
