@@ -4,7 +4,11 @@
     box-sizing: border-box;
 }
 
-.head-board {
+i{
+  font-family: 'FontAwesome';
+}
+
+#head-board {
     width: 100%;
     height: 100vh;
     display: flex;
@@ -13,6 +17,7 @@
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(https://source.unsplash.com/1280x720/?office,laptop,pc,programming);
     background-size: cover;
     background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 .container {
@@ -21,6 +26,7 @@
   width: 80%;
   margin: 0 auto;
 }
+
 
 .about-content, h2{
     color: black;
@@ -45,6 +51,10 @@ h1 {
     text-shadow: 0 0 20px rgba(0, 0, 0, 0.5), 0 0 20px rgba(0, 0, 0, 0.5);
 }
 
+h3 {
+  color: black;
+  text-align:center;
+}
 p {
   font-size: 18px;
   line-height: 30px;
@@ -146,6 +156,14 @@ li {
   text-align: left;
 }
 
+#nav-bar{
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  transition: all 300ms ease-in-out;
+}
+
 #nav-bar ul li a:hover {
     color: #007bff!important;
 }
@@ -164,7 +182,7 @@ li {
   font-size: 16px;
 }
 
-.container img {
+#head-board-photo {
     border: 1px solid black;
     border-radius: 250px;
     width: 250px;
@@ -178,10 +196,13 @@ li {
     left: 400px;
 }
 
-.about {
+#about {
+  width: 100%;
+  height: 70vh;
   padding-top: 50px;
   padding-bottom: 50px;
   color: black;
+  background-attachment: fixed;
 }
 
 .progress {
@@ -191,4 +212,153 @@ li {
 
 .progress-bar {
   border-radius: 16px;
+}
+
+
+ #experience {
+   width: 100%;
+   height: 110vh;
+    background: #efefef;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-attachment: fixed;
+ }
+
+.experience{
+  background: #fff;
+  width: 100%;
+  color: black;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 4px;
+}
+.contact {
+  width: 100%;
+  height: 50vh;
+  margin-top: 40px;
+  background-attachment: fixed;
+}
+
+
+.icon {
+  color: black;
+  font-size: 40px;
+  margin: 20px auto;
+  padding: 20px;
+  height: 80px;
+  width: 80px;
+  border: 1px solid black;
+  border-radius: 50%;
+  text-align: center;
+}
+
+.icon i {
+  position: relative;
+  bottom: 10px;
+}
+
+.text-center p {
+  color: black;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  /* text-align: center!important; */
+  margin-left: 40px;
+
+}
+
+.contact .col-md-4:hover {
+  background: #007bff;
+  cursor: pointer;
+  transition: 0.7s;
+  color: #fff!important;
+}
+
+/* ------------- Testimonials -------------  */
+#testimonials{
+  width: 100%;
+  height: 120vh;
+  background-attachment: fixed;
+  margin-bottom: 20px;
+}
+
+#testimonials p {
+  color: black;
+  margin-bottom: 50px;
+}
+
+#testimonials .row {
+  margin-top: 30px;
+}
+
+.profile:hover {
+  background: #efefef;
+  cursor: pointer;
+  transition: 0.7s;
+  /* color: #fff!important; */
+}
+
+.col-md-4 {
+  margin: 100px auto;
+}
+
+.user {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+}
+
+.profile{
+  padding: 70px 10px 10px;
+  background-color: #efefef;
+}
+
+.profile img{
+  top:1970px;
+  position: absolute;
+  left: calc(50% - 60px);
+  border: 10px solid #fff;
+  z-index: 5;
+  margin: 25px auto;
+}
+
+.profile h3{
+  font-size: 20px;
+  margin-top: 15px;
+  color: #007bff;
+}
+
+.profile span {
+  font-size: 12px;
+}
+
+.profile:hover{
+  box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+blockquote {
+  color: black;
+  font-size: 16px;
+  line-height: 30px;
+}
+
+blockquote:before {
+  content: open-quote;
+  color: #007bff;
+  line-height: 20px;
+  position: relative;
+  bottom: -15px;
+  right: 5px;
+  font-size: 3em;
+}
+
+blockquote::after {
+  content: close-quote;
+  font-size: 50px;
+  color: #007bff;
+  position: relative;
+  line-height: 10px;
+  bottom: -15px;
+  left: 5px;
 }
